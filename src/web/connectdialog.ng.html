@@ -1,0 +1,56 @@
+﻿<div class="qvgamsconnectdialogcontainer">
+	<div class="qvgamsconnectdialog" qv-global-escape="onEscape()">
+		<div class="loading-screen" ng-show="isLoading">
+			<div class="qv-loader"></div>
+		</div>
+	
+		<div class="header">
+			<h1 q-translation="{{titleText}}"></h1>
+		</div>
+		
+		<!--h2>Connector Description</h2>
+		<div>{{info}}</div-->
+
+		<div class="main">
+			<div class="pathDiv">
+				<div class="text">Path</div>
+				<div class="qvfilepathinputcontainer">
+					<div class="currentPathDiv itemcontainer">
+						<div ng-repeat="item in pathItems" class="item ng-scope" ng-click="goToPath(item.path)">
+							<div class="lui-button ng-binding" title="{{item.path}}">{{item.name}}</div>
+							<div class="lui-icon lui-icon--next" tid="add-data-path-separator"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="browserDiv qvfilebrowser">
+				<ul>
+					<li ng-repeat="folder in folders">
+						<button ng-click="getServerFolders(folder)">
+							<span class="list-icon lui-icon lui-icon--folder" aria-hidden="false"></span>
+							{{folder}}
+						</button>
+					</li>
+					<li ng-repeat="file in files">
+						<button disabled="disabled">
+							<span class="list-icon lui-icon lui-icon--file" aria-hidden="false"></span>
+							{{file}}
+						</button>
+					</li>
+				</ul>
+			</div>
+				
+			<div class="text">Name</div>
+			<input type="lui-input ng-valid-maxlength" ng-model="name" placeholder="Connection name" />
+		</div>
+
+		<div class="footer">
+			<div class="connectionInfo" ng-class="{'success': connectionSuccessful}">{{connectionInfo}}</div>
+			
+			<button ng-click="onCancelClicked()" class="lui-button lui-button--inverse">Cancel</button>
+			<button ng-click="onTestConnectionClicked()" class="lui-button lui-button--inverse">Test Connection</button>
+			<button ng-click="onOKClicked()" ng-disabled="!isOkEnabled()" q-translation="{{saveButtonText}}" class="lui-button lui-button--inverse"></button>
+		</div>
+	</div>
+</div>
