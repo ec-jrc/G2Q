@@ -48,6 +48,8 @@ Download Visual Studio
 7. Follow the next step:
 [Making your connector recognizable by Qlik Sense or QlikView](https://help.qlik.com/en-US/qlikview-developer/April2019/Subsystems/QVXSDKAPI/Content/QV_QVXSDKAPI/Making-connector-recognizable-by-QlikView.htm)
 
+In order to install the compiled connector, the "web" folder has to be copied from the "src" alongside the generated exe files.
+
 ## Used APIs
 
 ### Qlik SDK
