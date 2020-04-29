@@ -1,0 +1,134 @@
+﻿.qvgamsconnectdialogcontainer {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1021;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog {
+	position: relative;
+	top: 50px;
+	margin: auto;
+	width: 550px;
+	
+	background-color: white;
+	border: 2px solid #898B8C;
+	
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,.4);
+}
+
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog .text {
+	font-size: 15px;
+}
+
+.qvgamsconnectdialogcontainer .header {
+	padding: 20px 20px 5px;
+}
+
+.qvgamsconnectdialogcontainer .main {
+	padding: 5px 20px 10px;
+}
+
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog h1 {
+	font-size: 16px;
+	padding-top: 10px;
+}
+
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog h2 {
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog .main input {
+	display: block;
+	margin-top: 5px;
+	width: 100%
+}
+
+.qvgamsconnectdialogcontainer .connectionInfo {
+	display: inline-block;
+	color: orangered;
+	font-weight: bold;
+}
+
+.qvgamsconnectdialogcontainer .connectionInfo.success {
+	color: lawngreen
+}
+
+.qvgamsconnectdialogcontainer .footer {
+	padding: 10px 10px 10px 10px;
+	text-align: right;
+	background-color: #404040;
+}
+
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog .footer button {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.qvgamsconnectdialogcontainer .qvgamsconnectdialog .footer button[disabled=disabled] {
+	color: lightgrey;
+}
+
+.qvgamsconnectdialogcontainer .browserDiv {
+	overflow: auto;
+	height: 250px;
+	margin: .5rem 0 1rem 0;
+}
+
+.qvgamsconnectdialogcontainer .browserDiv ul li button {
+	width: 100%;
+	text-align: left;
+	padding: .3rem;
+	background-color: white;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0; 
+}
+
+.qvgamsconnectdialogcontainer .browserDiv ul li:last-child button {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.qvgamsconnectdialogcontainer .browserDiv ul li button:not([disabled]):hover {
+	background: rgba(0,0,0,.03);
+}
+
+.qvgamsconnectdialogcontainer .browserDiv ul li button[disabled] {
+	opacity: 0.6;
+}
+
+.qvgamsconnectdialogcontainer .browserDiv ul li button .lui-icon {
+	padding-right: .5rem;
+}
+
+.qvgamsconnectdialogcontainer .currentPathDiv {
+	border: 1px solid #b3b3b3;
+	font-size: 15px;
+	word-break: break-all;
+	padding: 1px 1px 1px 5px !important;
+    margin: 0 !important;
+	border-radius: 3px;
+	cursor: default;
+}
+
+.qvgamsconnectdialogcontainer .loading-screen {
+    background-color: hsla(0,0%,100%,.5);
+    bottom: 48px;
+    left: 2px;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    z-index: 2;
+}
+
+.qvgamsconnectdialogcontainer .loading-screen .qv-loader {
+    height: 26%;
+    top: 37%;
+    position: absolute;
+}
