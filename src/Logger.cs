@@ -16,7 +16,7 @@ namespace QvGamsConnector
         public Logger()
         {
             string localpath = Directory.GetCurrentDirectory();
-            myfile = File.CreateText(localpath + Path.DirectorySeparatorChar + "FranP.txt");
+            myfile = File.CreateText(localpath + Path.DirectorySeparatorChar + "GamsConnectorLog.txt");
         }
 
         public void AppendText(string text)
