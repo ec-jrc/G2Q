@@ -1,6 +1,6 @@
 # G2Q
 
-G2Q is a Qlik Sense data connectorfor importing GDX files into a Qlik application, and has been developed by the European Commission's Joint Research Centre (JRC).
+G2Q is a Qlik Sense data connector for importing GDX files into a Qlik application, and has been developed by the European Commission's Joint Research Centre (JRC).
 
 * Qlik Sense is a business intelligence platform, used for analyzing and disseminating dashboards.
 
