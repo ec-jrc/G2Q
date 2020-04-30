@@ -49,6 +49,10 @@ The connection has to be be assigned to a path, which will give access to the GA
 3. Click on "Test Connection"
 4. Click on "Create"
 
+The connection should appear in the right side of the Data Load Editor:
+
+![Connection](/doc/Connection.PNG)
+
 ### Using a connection
 The simplest way to generate this script is using the Qlik wizard, which is opened by clicking the button "Select data" that appears in the GAMS connection.
 
