@@ -37,7 +37,7 @@ Access to a Qlik Sense licence and installation is needed
 ### Creating a connection
 It should be possible to create a new GAMS connection in the Data Load Editor
 
-![Creating a connection](/doc/Creating a connection.PNG)
+![Creating a connection](/doc/Creating_a_connection.PNG)
 
 The connection has to be be assigned to a path, which will give access to the GAMS files
 1. Select the path
@@ -48,7 +48,7 @@ The connection has to be be assigned to a path, which will give access to the GA
 ### Using a connection
 The simplest way to generate this script is using the Qlik wizard, which is opened by clicking the button "Select data" that appears in the GAMS connection.
 
-![Select symbols](/doc/Select symbols.PNG)
+![Select symbols](/doc/Select_symbols.PNG)
 
 In this dialog the user has to select:
 1. **Folder**: the first selector shows the sub-folders that exist inside the connector's folder.
