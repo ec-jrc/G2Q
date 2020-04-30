@@ -58,7 +58,7 @@ In this dialog the user has to select:
 
 In order to generate the load script, at least one symbol and column has to be selected.
 
-#### Script syntax
+### Script syntax
 The script has the following syntax, including the connection to the connector, the LOAD and SQL statements:
 
 ```
@@ -77,13 +77,62 @@ SQL SELECT "name"
 FROM "countries <.\GAMS results\countries.gdx>";
 ```
 
-#### Symbols and how they are loaded
+For further knowledge about the script (like filtering), visit [Advance use](/doc/Advanced_use.md)
 
-TODO
+### Symbols and how they are loaded
+The connector will load these types of symbols, representing them as tables:
 
-#### Working with non-numeric values
+#### Scalar
+Columns |	Description	| Type
+--------|-------------|-----
+Value | Value of the scalar	| Text
+@Comments | Explanatory text of the scalar | Text
 
-TODO
+#### Set
+Columns |	Description	| Type
+--------|-------------|------
+One column for each used dimension / domain	| Each domain / dimension will appear as a column. The name will be the name of the domain. | Text
+Text | Explanatory text of each of the elements. If there isn't one, then it will show "Y" | Text
+
+#### Parameter
+Columns |	Description	| Type
+--------|-------------|-------
+One column for each used dimension / domain | Each domain / dimension will appear as a column. The name will be the name of the domain. | Text
+Value | Contains the value of the parameter for each row | If it can be represented as a number | Number
+Value (SV) | Contains the value of the parameter for each row | If it cannot be represented as a number | Text
+
+#### Equations and Variables
+Columns |	Description	| Type
+--------|-------------|------
+One column for each used dimension / domain | Each domain / dimension will appear as a column. The name will be the name of the domain |	Text
+Level | The "Level" attribute. If it can be represented as a number | Number
+Level (SV) | The "Level" attribute. If it cannot be represented as number | Text
+Marginal | The "Marginal" attribute. If it can be represented as a number | Number
+Marginal (SV)	| The "Marginal" attribute. If it cannot be represented as number | Text
+Lower | The "Lower" attribute. If it can be represented as a number | Number
+Lower (SV)	| The "Lower" attribute. If it cannot be represented as number | Text
+Upper | The "Upper" attribute. If it can be represented as a number | Number
+Upper (SV)	| The "Upper" attribute. If it cannot be represented as number | Text
+Scale | The "Scale" attribute. If it can be represented as a number | Number
+Scale (SV) | The "Scale" attribute. If it cannot be represented as number | Text
+
+### How to work with non-numeric values (infinite, epsilon, acronyms, ...)
+
+Parameter's values and variable/equation's attributes will be separated in two columns when loaded in Qlik, in order to separate the numerical values from epsilon and other special values, as was explained in previous sections.
+
+The values that are treated as special are:
+GDX value	| Qlik value
+----------|------------
+Positive infinite |	+INF
+Negative infinite	| -INF
+Not available	| NA
+Undefined	| UNDEF
+Epsilon	| EPS
+Acronym	| the value of the acronym
+
+Whenever a special value appears in at least one row, both columns have to be selected in the SQL statement, in other case the load will fail.
+
+After loading these fields in the SQL statement, they can be treated in the LOAD statement.
 
 ## Compilation
 
