@@ -1,6 +1,6 @@
 # G2Q
 
-G2Q is a Qlik Sense data connector for importing GDX files into a Qlik application, developed by the European Commission's Joint Research Centre (JRC).
+G2Q is a Qlik Sense data connector for importing GDX files into a Qlik application, developed by the [European Commission's Joint Research Centre (JRC)](https://ec.europa.eu/jrc).
 
 * **[Qlik Sense](https://www.qlik.com/es-es/products/qlik-sense)** is a business intelligence platform, used for analyzing and disseminating dashboards.
 
@@ -159,3 +159,13 @@ In order to install the compiled connector, the "web" folder has to be copied fr
 ## License
 
 Check the [LICENSE](LICENSE) file
+
+## Contributors
+
+This project was started by the [European Commission's Joint Research Centre (JRC)](https://ec.europa.eu/jrc), through a contract with the consultancy company [Sistel](https://www.sistel.es/)
+
+The main contributors to the project before being included in Github were:
+- Arnaldo Caivano, working for the JRC
+- Celso Jesús Gorrín García, working for the JRC
+- Francisco Pedreira Montiel, working for [Sistel](https://www.sistel.es/)
+- Javier Castro Malet, working as an external contractor for the JRC through a contract with [Arhs Developments](https://www.arhs-group.com/)
