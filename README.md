@@ -81,7 +81,7 @@ SQL SELECT "name"
 FROM "countries <.\GAMS results\countries.gdx>";
 ```
 
-For further knowledge about the script (like filtering), visit [Advance use](/doc/Advanced_use.md)
+For further knowledge about the script (like filtering), visit [Advanced use](/doc/Advanced_use.md)
 
 ### Symbols and how they are loaded
 The connector will load these types of symbols, representing them as tables:
