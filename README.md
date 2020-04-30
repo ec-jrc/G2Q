@@ -34,6 +34,55 @@ Access to a Qlik Sense licence and installation is needed
 
 ## How to use
 
+### Creating a connection
+It should be possible to create a new GAMS connection in the Data Load Editor
+
+![Creating a connection](/doc/Creating a connection.PNG)
+
+The connection has to be be assigned to a path, which will give access to the GAMS files
+1. Select the path
+2. Choose a name for the connection
+3. Click on "Test Connection"
+4. Click on "Create"
+
+### Using a connection
+The simplest way to generate this script is using the Qlik wizard, which is opened by clicking the button "Select data" that appears in the GAMS connection.
+
+![Select symbols](/doc/Select symbols.PNG)
+
+In this dialog the user has to select:
+1. **Folder**: the first selector shows the sub-folders that exist inside the connector's folder.
+2. **File**: the second selector shows all the GDX files once a folder has been selected.
+3. **Symbols**: the left panel shows the symbols defined in the GDX file once a file has been selected.
+4. **Fields**: the central panel shows the columns and a preview of the first rows once a symbol has been selected.
+
+In order to generate the load script, at least one symbol and column has to be selected.
+
+#### Script syntax
+The script has the following syntax, including the connection to the connector, the LOAD and SQL statements:
+
+```
+LIB CONNECT TO 'NAME_OF_THE_GAMS_CONNECTION';
+
+LOAD "field_1", 
+     "field_2";
+SQL SELECT "field_1",
+    "field_2"
+FROM "symbol_name <path_to_file>";
+```
+The path to the file starts from the connector's folder, and can access sub-folders, e.g.
+
+```
+SQL SELECT "name"
+FROM "countries <.\GAMS results\countries.gdx>";
+```
+
+#### Symbols and how they are loaded
+
+TODO
+
+#### Working with non-numeric values
+
 TODO
 
 ## Compilation
@@ -45,7 +94,7 @@ Download Visual Studio
 4. Add as reference “QvxLibrary.dll” located into SDK file downloaded earlier.
 5. Check that both references has been correctly added
 6. Compile the project using Visual Studio
-7. Follow the next step:
+7. Follow the next step in order to name the connector, e.g. GAMS:
 [Making your connector recognizable by Qlik Sense or QlikView](https://help.qlik.com/en-US/qlikview-developer/April2019/Subsystems/QVXSDKAPI/Content/QV_QVXSDKAPI/Making-connector-recognizable-by-QlikView.htm)
 
 In order to install the compiled connector, the "web" folder has to be copied from the "src" alongside the generated exe files.
