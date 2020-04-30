@@ -32,7 +32,7 @@ The development was performed and tested with **QvxLibrary DLL v2.1.4**
 * Download the "bin" folder
 * Locate Qlik connectors folder, typically C:\Users\\[User]\AppData\Local\Programs\Common Files\Qlik\Custom Data\
 * Copy the folder "bin" with its content, giving it a specific name like "GamsConnector"
-* Copy the file "GAMS.net4.dll" located at "[GAMS install directory]\[Latest version]" to the "GamsConnector" folder
+* Copy the file "GAMS.net4.dll" located at "[GAMS install directory]\\[Latest version]" to the "GamsConnector" folder
 * Copy the file "QvxLibrary.dll" located into Qlik SDK file downloaded earlier to the "GamsConnector" folder.
 * Restart Qlik Sense server or Qlik Sense Desktop
 
