@@ -166,6 +166,6 @@ This project was started by the [European Commission's Joint Research Centre (JR
 
 The main contributors to the project before being included in Github were:
 - Arnaldo Caivano, working for the JRC
-- Celso Jesús Gorrín García, working for the JRC
+- Celso Jesús Gorrín González, working for the JRC
 - Francisco Pedreira Montiel, working for [Sistel](https://www.sistel.es/)
 - Javier Castro Malet, working as an external contractor for the JRC through a contract with [Arhs Developments](https://www.arhs-group.com/)
