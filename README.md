@@ -21,7 +21,7 @@ The development was performed and tested with **Gams DLL v25.1.1**
 
 Access to a Qlik Sense licence and installation is needed
 * To download the latest version, you can visit https://demo.qlik.com/download/ use the left column to navigate to the last version of Qlik sense desktop. The main reason to use the desktop (stand-alone) version is for debug.
-* Also, in this download site, click in “View All/Search” and find the SDK. We need to download the latest SDK version because we need the “QvxLibray.dll” it provides. The file to download at the moment of writing this guide is “QvxSDK_2.1x64”.
+* Also, in this download site, click in "View All/Search" and find the SDK. We need to download the latest SDK version because we need the "QvxLibray.dll" it provides. The file to download at the moment of writing this guide is "QvxSDK_2.1x64".
 * To use Qlik sense desktop we need a registered Qlik user account. Go to https://www.qlik.com/es-es/try-or-buy/download-qlik-sense if you need to create one.
 * Like GAMS, the installation is quite simple by following the wizard.
 
@@ -146,9 +146,9 @@ After loading these fields in the SQL statement, they can be treated in the LOAD
 
 Download Visual Studio
 1. Create a new C# console project.
-2. Set “x64” as “Platform target” 
-3. Add as reference “GAMS.net4.dll” located at “[GAMS install directory]\[Latest version]” e.g. “C:\Program Files\25.1”
-4. Add as reference “QvxLibrary.dll” located into SDK file downloaded earlier.
+2. Set "x64" as "Platform target" 
+3. Add as reference "GAMS.net4.dll" located at "[GAMS install directory]\[Latest version]" e.g. "C:\GAMS\win64\30.3"
+4. Add as reference "QvxLibrary.dll" located into SDK file downloaded earlier.
 5. Check that both references has been correctly added
 6. Compile the project using Visual Studio
 7. Follow the next step in order to name the connector, e.g. GAMS:
