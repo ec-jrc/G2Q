@@ -160,11 +160,9 @@ In order to install the compiled connector, the "web" folder has to be copied fr
 
 Check the [LICENSE](LICENSE) file
 
-## Contributors
+Copyright (c) European Union, 2020. G2Q has been developed by the [European Commission's Joint Research Centre (JRC)](https://ec.europa.eu/jrc) and released publicly under the BSD-3-Clause licence. [Sistel](https://www.sistel.es/) contributed to the development of G2Q as a contractor of the European Commission
 
-This project was started by the [European Commission's Joint Research Centre (JRC)](https://ec.europa.eu/jrc), through a contract with the consultancy company [Sistel](https://www.sistel.es/)
-
-The main contributors to the project before being included in Github were:
+The main contributors to the project before it was included in Github were:
 - Arnaldo Caivano, working for the JRC
 - Celso Jesús Gorrín González, working for the JRC
 - Francisco Pedreira Montiel, working for [Sistel](https://www.sistel.es/)
